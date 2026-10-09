@@ -716,7 +716,7 @@ flowchart TB
 每一课末尾的“参考说明”逐条写明了该课参考的材料和具体内容。整门课主要参考了以下来源：
 
 - **编排方式**：[Python-100-Days](https://github.com/jackfrued/Python-100-Days)（骆昊）。按天分课、按阶段分目录、README 作总目录的形式来自这个项目。
-- **设计模式的划分**：吴恩达在 DeepLearning.AI 的 [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/) 课程。反思、工具使用、规划、多 agent 四种设计模式的划分，以及对评估和错误分析的重视，是 Day39、Day44 等课选题的依据。这门课也是本课程推荐的视频补充。
+- **设计模式的划分**：吴恩达在 DeepLearning.AI 的 [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/) 课程。Day39 反思模式和 Day44 规划模式的选题，参考了该课程公开大纲里“反思、工具使用、规划、多 agent”四种设计模式的划分；参考的是大纲，两课的正文为本课程自己编写。这门课也是本课程推荐的视频补充。
 - **工程实践**：Anthropic 工程博客的几篇文章（构建 agent、评估、上下文工程、工具设计、长时运行），用在评估、编排和工具各阶段。
 - **评估方法**：Hamel Husain 与 Shreya Shankar 的 AI Evals FAQ。
 - **框架与平台文档**：LangGraph、Langfuse、LiteLLM、Model Context Protocol、Microsoft Learn、GitHub Docs。
