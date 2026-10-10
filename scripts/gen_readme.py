@@ -138,9 +138,10 @@ for folder, head, days in S:
         out.append(f"#### Day{n:02d} - {l}\n")
         for i,b in enumerate(bullets,1): out.append(f"{i}. {b}")
         out.append("")
+progress = "100 天的正文已全部完成，后续按更新日志持续修订。" if done == total else f"目前已完成 {done} 天的正文，其余各天只有大纲，标注为“待更新”，会陆续补齐。"
 intro = f"""## AI Agent - 100 天从应用开发到架构设计
 
-> **说明**：这是一套面向应用开发者的 AI agent 学习路径，编排方式参考了 [Python-100-Days](https://github.com/jackfrued/Python-100-Days)：每天一课，每课约 1 小时。目前已完成 {done} 天的正文，其余各天只有大纲，标注为“待更新”，会陆续补齐。
+> **说明**：这是一套面向应用开发者的 AI agent 学习路径，编排方式参考了 [Python-100-Days](https://github.com/jackfrued/Python-100-Days)：每天一课，每课约 1 小时。{progress}
 
 ### 这门课适合谁
 
