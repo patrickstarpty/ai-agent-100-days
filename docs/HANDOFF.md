@@ -163,7 +163,7 @@
 
 ## 五、已知问题和待定事项
 
-- **还没有用真实模型跑过。** `scripts/real_model_check.py` 会从课文里抽出 Day02~06、Day08、Day09、Day36、Day40、Day41 的代码和冒烟脚本，逐项运行并检查结果。2026-10-11 已用 litellm 1.105.0、langgraph 1.2.14 对一个本地模拟的 OpenAI 兼容服务跑通全部 12 项，证明接线无误；配好 `.env` 里的真实模型后再跑一次即可。
+- **真实模型运行。** 2026-10-11 用 `scripts/real_model_check.py` 以 DashScope 的 qwen-plus（litellm 1.105.0、langgraph 1.2.14）跑了 Day02~06、Day08、Day09、Day36、Day40、Day41 和冒烟脚本，12 项全部通过。MCP、OpenTelemetry、Langfuse 的代码只对照了官方文档，没有运行。换模型后再跑一次这个脚本。
 - **LangGraph 示例只用替身模型跑过。** 2026-10-11 用 langgraph 1.2.14 加替身模型实际运行了 Day36、37、38、40、41、42 的图代码，行为与课文一致；还没有接真实模型跑过。MCP、OpenTelemetry、Langfuse 的代码只对照了官方文档，没有运行。
 - **许可证。** 正文、模板、讲师材料和样例数据用 CC BY 4.0（`LICENSE`），脚本和代码片段用 MIT（`LICENSE-CODE`），已写进 README。
 - **提交记录里的作者邮箱公开可见。** 如需换成 GitHub 的 noreply 邮箱，要改写历史后强制推送。
