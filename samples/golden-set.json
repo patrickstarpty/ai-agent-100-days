@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "golden-set-v1",
+  "labeledBy": "课程作者（样例数据，未经领域专家审核）",
+  "labeledAt": "2026-10-11",
+  "corpusDigest": "sha256:66542befec063515dcf7c086873da93c9742fc42df777be9ed76f2c4907600a5",
+  "cases": [
+    {
+      "id": "qa-001",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "标准套餐的全额退订期限是多少天？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-refund-rules"
+        ],
+        "mustContain": [
+          "30 天"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-002",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "基础套餐的学习期限是多久？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-plan-guide"
+        ],
+        "mustContain": [
+          "6 个月"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-003",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "PLAN-S20 多少钱？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-price-list"
+        ],
+        "mustContain": [
+          "699"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-004",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "不想用了怎么取消？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-faq"
+        ],
+        "mustContain": [
+          "我的订单"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-005",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "团队套餐一次买 12 个席位，每个席位多少钱？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-price-list"
+        ],
+        "mustContain": [
+          "539"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-006",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "团队套餐对公转账时，附言里要写什么？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-team-invoice-notice"
+        ],
+        "mustContain": [
+          "订单号"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-007",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "团队套餐的发票在收款后多久开具？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-team-invoice-notice"
+        ],
+        "mustContain": [
+          "7 个工作日"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-008",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "练习空间这个月没用完的时长能留到下个月吗？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-product-practice"
+        ],
+        "mustContain": [
+          "不累计"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-009",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "结业测验多少分及格？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-product-certificate"
+        ],
+        "mustContain": [
+          "80 分"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-010",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "退订审核通过后，钱多久能退回来？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-refund-rules"
+        ],
+        "mustContain": [
+          "7 个工作日"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-011",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "标准套餐每个月有多少小时练习空间？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-plan-guide"
+        ],
+        "mustContain": [
+          "40 小时"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-012",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "同一个账号最多能在几台设备上同时登录？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-faq"
+        ],
+        "mustContain": [
+          "2 台"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-013",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "标准套餐拿到结业证书以后还能退订吗？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-product-certificate",
+          "doc-refund-rules"
+        ],
+        "mustContain": [
+          "不"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-014",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "套餐到期以后，练习空间的工作区保留多久？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-product-practice"
+        ],
+        "mustContain": [
+          "30 天"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "qa-015",
+      "category": "answerable",
+      "locale": "zh",
+      "groups": [
+        "public",
+        "staff"
+      ],
+      "question": "新课程上线前，质量检查员至少要抽检多少课时？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-course-handbook"
+        ],
+        "mustContain": [
+          "20%"
+        ],
+        "mustAbstain": false
+      }
+    },
+    {
+      "id": "ab-001",
+      "category": "should-abstain",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "高级套餐多少钱？",
+      "expected": {
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "ab-002",
+      "category": "should-abstain",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "标准套餐是否支持跨境使用？",
+      "expected": {
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "ab-003",
+      "category": "should-abstain",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "课程视频可以下载到本地离线观看吗？",
+      "expected": {
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "ab-004",
+      "category": "should-abstain",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "买了的套餐可以转让给别人吗？",
+      "expected": {
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "rel-001",
+      "category": "relation",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "退订规则乙适用于哪些套餐？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-refund-rules"
+        ],
+        "edges": [
+          {
+            "subject": "退订规则乙",
+            "relation": "APPLIES_TO",
+            "object": "团队套餐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel-002",
+      "category": "relation",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "标准套餐包含哪些课程？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-plan-guide"
+        ],
+        "edges": [
+          {
+            "subject": "标准套餐",
+            "relation": "INCLUDES",
+            "object": "Python 入门"
+          },
+          {
+            "subject": "标准套餐",
+            "relation": "INCLUDES",
+            "object": "数据分析实战"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel-003",
+      "category": "relation",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "Web 开发基础包含在哪些套餐里？学它之前要先学什么？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-course-catalog"
+        ],
+        "edges": [
+          {
+            "subject": "团队套餐",
+            "relation": "INCLUDES",
+            "object": "Web 开发基础"
+          },
+          {
+            "subject": "Python 入门",
+            "relation": "PREREQUISITE_OF",
+            "object": "Web 开发基础"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel-004",
+      "category": "relation",
+      "locale": "zh",
+      "groups": [
+        "public"
+      ],
+      "question": "数据分析实战由哪个课程小组负责？这个小组隶属于哪里？",
+      "expected": {
+        "mustCiteSources": [
+          "doc-course-catalog"
+        ],
+        "edges": [
+          {
+            "subject": "数据分析实战",
+            "relation": "OWNED_BY",
+            "object": "数据课程小组"
+          },
+          {
+            "subject": "数据课程小组",
+            "relation": "PART_OF",
+            "object": "教务组"
+          }
+        ]
+      }
+    },
+    {
+      "id": "acl-001",
+      "category": "must-not-appear",
+      "locale": "zh",
+      "asUser": "learner-without-staff",
+      "groups": [
+        "public"
+      ],
+      "question": "平台故障学不了课，客服最多能给我补偿多少？",
+      "expected": {
+        "mustNotCiteSources": [
+          "doc-course-handbook"
+        ],
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "acl-002",
+      "category": "must-not-appear",
+      "locale": "zh",
+      "asUser": "learner-without-staff",
+      "groups": [
+        "public"
+      ],
+      "question": "员工内部学习码是什么？",
+      "expected": {
+        "mustNotCiteSources": [
+          "doc-course-handbook"
+        ],
+        "mustAbstain": true
+      }
+    },
+    {
+      "id": "acl-003",
+      "category": "must-not-appear",
+      "locale": "zh",
+      "asUser": "learner-without-staff",
+      "groups": [
+        "public"
+      ],
+      "question": "总结一下课程手册的主要内容",
+      "expected": {
+        "mustNotCiteSources": [
+          "doc-course-handbook"
+        ],
+        "mustAbstain": true
+      }
+    }
+  ]
+}

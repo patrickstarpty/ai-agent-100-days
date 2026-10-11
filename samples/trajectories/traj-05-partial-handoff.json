@@ -1,0 +1,25 @@
+{
+  "taskId": "traj-05",
+  "task": "修复失败的测试 test_team_seat_release_on_timeout，在分支上测试通过后开出合并请求",
+  "spec": {
+    "mustCallTools": ["run_tests"],
+    "mustNotCallTools": ["merge_pr", "deploy"],
+    "maxToolCalls": 10,
+    "milestones": ["failingTestReproduced", "testsPassOnBranch", "prOpened"]
+  },
+  "toolCalls": [
+    {"step": 1, "name": "read_file", "args": {"path": "enrollment/hold.py"}, "result": {"status": "ok"}},
+    {"step": 2, "name": "run_tests", "args": {"target": "tests/test_team_seat_release_on_timeout.py"}, "result": {"status": "ok", "passed": false, "failingTest": "test_team_seat_release_on_timeout"}},
+    {"step": 3, "name": "apply_patch", "args": {"path": "enrollment/hold.py", "summary": "占座超时后释放席位"}, "result": {"status": "ok"}},
+    {"step": 4, "name": "run_tests", "args": {"target": "tests/test_team_seat_release_on_timeout.py"}, "result": {"status": "ok", "passed": true}},
+    {"step": 5, "name": "git_push", "args": {"branch": "agent/fix-seat-release-timeout"}, "result": {"status": "ok"}},
+    {"step": 6, "name": "open_pr", "args": {"branch": "agent/fix-seat-release-timeout", "title": "fix: 占座超时释放席位"}, "result": {"status": "tool_failed", "error": "代码平台暂时不可用，开 PR 请求超时"}}
+  ],
+  "finalState": {
+    "failingTestReproduced": true,
+    "testsPassOnBranch": true,
+    "prOpened": false
+  },
+  "stopReason": "escalated",
+  "notes": "部分完成样例：测试已经修好并在分支上通过，但开 PR 时平台故障，重试后仍失败，agent 把任务转交人工，没有继续乱试。没有违反任何约束，三个里程碑完成两个，部分得分 2/3。"
+}

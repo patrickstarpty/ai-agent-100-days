@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "corpus-manifest-v1",
+  "note": "虚构的在线编程学习平台资料，供课程练习使用。groups 为可见用户组；status 标明同一文档的现行版本与已被取代的版本。",
+  "documents": [
+    {"id": "doc-plan-guide", "path": "plan-guide-v1.md", "format": "markdown", "groups": ["public"], "version": "v1", "status": "superseded", "needs_ocr": false, "title": "套餐说明（第 1 版）"},
+    {"id": "doc-plan-guide", "path": "plan-guide-v2.md", "format": "markdown", "groups": ["public"], "version": "v2", "status": "current", "needs_ocr": false, "title": "套餐说明（第 2 版）"},
+    {"id": "doc-refund-rules", "path": "refund-rules.md", "format": "markdown", "groups": ["public"], "version": "v2", "status": "current", "needs_ocr": false, "title": "退订规则"},
+    {"id": "doc-course-handbook", "path": "course-handbook.md", "format": "markdown", "groups": ["staff"], "version": "v4", "status": "current", "needs_ocr": false, "title": "课程手册（内部资料）"},
+    {"id": "doc-price-list", "path": "price-list.csv", "format": "csv", "groups": ["public"], "version": "2026-06", "status": "current", "needs_ocr": false, "title": "套餐价目表"},
+    {"id": "doc-product-practice", "path": "product-practice-space.md", "format": "markdown", "groups": ["public"], "version": "v2", "status": "current", "needs_ocr": false, "title": "产品说明：练习空间"},
+    {"id": "doc-product-certificate", "path": "product-certificate.md", "format": "markdown", "groups": ["public"], "version": "v1", "status": "current", "needs_ocr": false, "title": "产品说明：结业证书"},
+    {"id": "doc-faq", "path": "faq.md", "format": "markdown", "groups": ["public"], "version": "v3", "status": "current", "needs_ocr": false, "title": "常见问题"},
+    {"id": "doc-course-catalog", "path": "course-catalog.html", "format": "html", "groups": ["public"], "version": "v2", "status": "current", "needs_ocr": false, "title": "课程目录"},
+    {"id": "doc-team-invoice-notice", "path": "team-invoice-notice-scan.pdf", "format": "pdf", "groups": ["public"], "version": "v1", "status": "current", "needs_ocr": true, "title": "团队套餐对公转账与发票说明（扫描件）"}
+  ]
+}

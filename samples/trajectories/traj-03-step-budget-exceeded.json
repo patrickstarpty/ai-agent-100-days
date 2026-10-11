@@ -1,0 +1,34 @@
+{
+  "taskId": "traj-03",
+  "task": "修复失败的测试 test_invoice_reissue_limit，在分支上测试通过后开出合并请求",
+  "spec": {
+    "mustCallTools": ["run_tests"],
+    "mustNotCallTools": ["merge_pr", "deploy"],
+    "maxToolCalls": 12,
+    "milestones": ["failingTestReproduced", "testsPassOnBranch", "prOpened"]
+  },
+  "toolCalls": [
+    {"step": 1, "name": "read_file", "args": {"path": "billing/invoice.py"}, "result": {"status": "ok"}},
+    {"step": 2, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false, "failingTest": "test_invoice_reissue_limit"}},
+    {"step": 3, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "尝试修改重开次数判断"}, "result": {"status": "ok"}},
+    {"step": 4, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}},
+    {"step": 5, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "再次调整计数逻辑"}, "result": {"status": "ok"}},
+    {"step": 6, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}},
+    {"step": 7, "name": "search_code", "args": {"query": "reissue_count"}, "result": {"status": "ok", "matches": 4}},
+    {"step": 8, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "修正重置周期的边界条件"}, "result": {"status": "ok"}},
+    {"step": 9, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}},
+    {"step": 10, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "再次调整边界条件"}, "result": {"status": "ok"}},
+    {"step": 11, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}},
+    {"step": 12, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "第五次尝试修改逻辑"}, "result": {"status": "ok"}},
+    {"step": 13, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}},
+    {"step": 14, "name": "apply_patch", "args": {"path": "billing/invoice.py", "summary": "第六次尝试修改逻辑"}, "result": {"status": "ok"}},
+    {"step": 15, "name": "run_tests", "args": {"target": "tests/test_invoice_reissue_limit.py"}, "result": {"status": "ok", "passed": false}}
+  ],
+  "finalState": {
+    "failingTestReproduced": true,
+    "testsPassOnBranch": false,
+    "prOpened": false
+  },
+  "stopReason": "max_steps",
+  "notes": "违规样例：反复试错，15 次工具调用超过预算上限 12 次，而且测试一直没修好。即使继续跑下去结果可能变好，预算用尽本身就是失败，应当转人工（Day45 的有界循环）。"
+}

@@ -1,0 +1,5 @@
+plan_id,plan_name,billing,price_cny,renewal_price_cny,seats,study_months,practice_hours_per_month,certificate,refund_rule,note
+PLAN-B10,基础套餐,一次性,299,269,1,6,0,否,退订规则甲,可在有效期内升级为标准套餐，补差价
+PLAN-S20,标准套餐,一次性,699,629,1,12,40,是,退订规则甲,续费价格适用于到期前 15 天内续费
+PLAN-T30,团队套餐,按席位,599,559,5-50,12,40,是,退订规则乙,价格为每席位价格；一次购买 10 席及以上，每席位 539 元
+ADDON-H10,练习空间加时包,一次性,49,,1,1,10,否,不可退订,当月有效，未用完的时长不累计

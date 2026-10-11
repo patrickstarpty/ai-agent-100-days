@@ -1,0 +1,18 @@
+# Day01~10 大模型应用基础：模型调用、结构化输出、测试
+litellm
+pydantic
+python-dotenv
+pytest
+
+# Day35~46 编排：工作流与受控循环
+langgraph
+
+# Day47~56 工具、Skills 与 MCP：编写和调试 MCP server
+mcp[cli]
+
+# Day67~76 可观测性与生产化：追踪
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-http
+
+# Day67~76 可观测性与生产化：追踪与评估后端（以 Langfuse 为例）
+langfuse
